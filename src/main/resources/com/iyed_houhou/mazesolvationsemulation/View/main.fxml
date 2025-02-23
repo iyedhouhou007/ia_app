@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="800.0" prefWidth="1000.0" styleClass="root" stylesheets="@styles.css"
+            xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.iyed_houhou.mazesolvationsemulation.application.controllers.MainController">
+    <center>
+        <VBox spacing="10.0" styleClass="vbox">
+            <Label text="Select Maze Dimensions and Algorithm" styleClass="label"/>
+            <HBox alignment="CENTER" spacing="10.0" styleClass="hbox">
+                <Label text="Rows:" styleClass="label"/>
+                    <ComboBox fx:id="rowsComboBox" styleClass="combo-box" prefHeight="25.0" prefWidth="62.0" />
+                <Label text="Cols:" styleClass="label"/>
+                    <ComboBox fx:id="colsComboBox" styleClass="combo-box" prefHeight="25.0" prefWidth="71.0" />
+                <Label text="Algorithm:" styleClass="label"/>
+                    <Button fx:id="refreshButton" text="Refresh Maze" styleClass="button" prefHeight="25.0" />
+                    <Button fx:id="resetSelectionsButton" text="Reset Selections" styleClass="button" prefHeight="25.0" />
+                <Label text="Battery:" styleClass="label"/>
+                    <ComboBox fx:id="batteryComboBox" styleClass="combo-box" prefHeight="25.0" prefWidth="71.0" />
+                <Label fx:id="batteryLevelLabel" text="" styleClass="label"/>
+            </HBox>
+            <GridPane fx:id="gridPane" VBox.vgrow="ALWAYS" styleClass="grid-pane">
+                <columnConstraints>
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                </rowConstraints>
+            </GridPane>
+        </VBox>
+    </center>
+</BorderPane>

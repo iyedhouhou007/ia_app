@@ -1,0 +1,103 @@
+/* styles.css */
+.root {
+    -fx-background-color: #e0d8b0; /* Light parchment background */
+}
+
+.hbox, .vbox {
+    -fx-padding: 15px;
+}
+
+.label {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #5e3a1d; /* Dark brown text */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 3, 0, 1, 1); /* Subtle shadow */
+}
+
+.combo-box {
+    -fx-pref-width: 80px;
+    -fx-background-color: #f8f0e0; /* Off-white combobox background */
+    -fx-border-color: #a88a60; /* Brown border */
+    -fx-border-width: 2px;
+    -fx-background-radius: 0; /* Square corners */
+    -fx-border-radius: 0;
+}
+.combo-box .list-cell {
+    -fx-background-color: #f8f0e0;
+    -fx-text-fill: #5e3a1d;
+}
+.combo-box .list-view {
+    -fx-background-color: #f8f0e0;
+    -fx-border-color: #a88a60;
+    -fx-border-width: 2px;
+}
+
+
+.button {
+    -fx-background-color: linear-gradient(to bottom, #d4ac0d, #b8860b); /* Gold gradient */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-border-color: #8b6508; /* Darker gold border */
+    -fx-border-width: 3px;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-cursor: hand;
+    -fx-effect: innershadow(gaussian, rgba(0,0,0,0.6), 5, 0.5, 2, 2); /* Inset shadow for depth */
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(to bottom, #e6b817, #c09010); /* Lighter gold on hover */
+}
+
+.grid-pane {
+    -fx-background-color: #c8b090; /* Medium brown for grid background (like earth) */
+    -fx-border-color: #8b7355; /* Darker brown grid border */
+    -fx-border-width: 3px;
+}
+
+.cell-pane {
+    -fx-border-color: #a88a60; /* Lighter brown cell borders */
+    -fx-border-width: 1px;
+}
+
+.cell-pane:hover {
+    -fx-cursor: hand;
+}
+
+.cell-wall {
+    -fx-background-color: #776e65; /* Stone wall color */
+}
+
+.cell-water {
+    -fx-background-color: #5dade2; /* Fantasy water blue */
+}
+
+.cell-sand {
+    -fx-background-color: #f0e68c; /* Light sand color */
+}
+
+.cell-grass {
+    -fx-background-color: #8fbc8f; /* Green grass color */
+}
+
+.path-circle {
+    -fx-fill: #ff6347; /* Tomato red for path circles (like gems/orbs) */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.7), 5, 0, 2, 2); /* Shadow for circles */
+}
+
+.path-line {
+    -fx-stroke: #ff6347; /* Tomato red path line */
+    -fx-stroke-width: 4px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.7), 5, 0, 2, 2); /* Shadow for path line */
+}
+
+.start-icon, .goal-icon {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.7), 5, 0, 2, 2); /* Shadow for icons */
+}
+
+.robot {
+    -fx-fill: red; /* Or whatever color you chose */
+    -fx-stroke: black;
+    -fx-stroke-width: 1;
+}
